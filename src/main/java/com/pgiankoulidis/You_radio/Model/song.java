@@ -1,16 +1,17 @@
-package com.pgiankoulidis.You_radio.Model;
+package com.pgiankoulidis.you_radio.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 import org.springframework.data.annotation.PersistenceConstructor;
 import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Autowired;
 
-@Component("song")
 @Entity
 public class song {
 
-    
+
+
     @Id
     public int song_id;
     public String social_media;
@@ -83,6 +84,6 @@ public class song {
         this.queryId = queryId;
     }
 
-    
-    
+
+
 }
